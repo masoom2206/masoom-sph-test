@@ -1,0 +1,5 @@
+name: 'Custom module for jugaad products'
+type: module
+description: 'Custom module to create Jugaad Products content type and block to render QR code for product purchase link'
+core_version_requirement: ^8 || ^9
+package: 'Custom'

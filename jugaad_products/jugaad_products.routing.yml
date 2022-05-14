@@ -1,0 +1,13 @@
+jugaad_products.qr:
+  path: '/image-qr-generate'
+  defaults:
+    _controller: '\Drupal\jugaad_products\Controller\QRGeneratorController::imageUrl'
+  requirements:
+    _access: 'TRUE'
+jugaad_products.admin_settings:
+  path: '/admin/config/qr-code-settings'
+  defaults:
+    _form: '\Drupal\jugaad_products\Form\QRCodeConfigurationForm'
+    _title: 'QR Code Image Configuration'
+  requirements:
+    _permission: 'administer site configuration'

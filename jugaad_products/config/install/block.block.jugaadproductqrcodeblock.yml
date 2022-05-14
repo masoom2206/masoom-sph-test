@@ -1,0 +1,28 @@
+uuid: 3896da68-fe41-491f-b63c-e7af80dab3d8
+langcode: en
+status: true
+dependencies:
+  module:
+    - jugaad_products
+    - node
+  theme:
+    - bartik
+id: jugaadproductqrcodeblock
+theme: bartik
+region: sidebar_second
+weight: -7
+provider: null
+plugin: jugaad_product_qr_code_block
+settings:
+  id: jugaad_product_qr_code_block
+  label: 'Jugaad Product QR code block'
+  label_display: '0'
+  provider: jugaad_products
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      jugaad_products: jugaad_products

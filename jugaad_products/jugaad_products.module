@@ -1,0 +1,38 @@
+<?php
+
+
+/**
+ * @file
+ * Provides custom functionality for Jugaad Products.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function jugaad_products_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the Jugaad Products custom module.
+    case 'help.page.jugaad_products':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Jugaad Products custom module to create content type and block to render QR code for product purchase link') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function jugaad_products_theme() {
+  return [
+    'jugaad_product_qr_code_block' => [
+      'variables' => [
+        'image' => [],
+      ],
+    ],
+  ];
+}

@@ -1,0 +1,23 @@
+uuid: 5dad1b4d-f029-4cc2-91ae-5dbefd4c3756
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.jugaad_products
+  module:
+    - text
+id: node.jugaad_products.body
+field_name: body
+entity_type: node
+bundle: jugaad_products
+label: 'Product Description'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

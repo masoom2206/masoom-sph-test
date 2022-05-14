@@ -1,0 +1,14 @@
+{
+  "name": "drupal/jugaad_products",
+  "description": "Composer.json file to install QR code library.",
+  "type": "drupal-jugaad_products-module",
+  "authors": [
+    {
+      "name": "Syed Masoom Haider",
+      "email": "masoom2206@gmail.com"
+    }
+  ],
+  "require": {
+    "endroid/qr-code-bundle": "^4.0"
+  }
+}
